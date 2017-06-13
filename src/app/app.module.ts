@@ -6,11 +6,19 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { Favorites } from '../pages/favorites/favorites';
+import { Library } from '../pages/library/library';
+import { Quotes } from '../pages/quotes/quotes';
+import { Quote } from '../pages/quote/quote';
+import { Settings } from '../pages/settings/settings';
 
 @NgModule({
   declarations: [
     MyApp,
-    Favorites
+    Favorites,
+    Library,
+    Quotes,
+    Quote,
+    Settings
   ],
   imports: [
     BrowserModule,
@@ -19,7 +27,11 @@ import { Favorites } from '../pages/favorites/favorites';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    Favorites
+    Favorites,
+    Library,
+    Quotes,
+    Quote,
+    Settings
   ],
   providers: [
     StatusBar,
